@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFID Reader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .controls {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        #uidDisplay {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>RFID Reader Interface</h1>
+    <div class="controls">
+        <button id="connectBtn">Connect to RFID Reader</button>
+        <button id="disconnectBtn">Disconnect</button>
+    </div>
+    <div id="uidDisplay">Waiting for RFID card...</div>
+    <script src="rfid-reader.js"></script>
+</body>
+</html>
